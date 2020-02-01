@@ -2,10 +2,6 @@ require 'active_support'
 require 'active_support/core_ext'
 
 class RecurringMoment
-
-  # added attr_reader to provide access to standard instance readers
-  attr_reader :start, :interval, :period
-
   def initialize(start:, interval:, period:)
     @start = start
     @interval = interval
